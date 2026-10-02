@@ -1,0 +1,32 @@
+{
+  "name": "sih-livelihood-evidence-loop",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Livelihood Evidence Loop - Offline, Event-Sourced Prototype for District Livelihood Intelligence",
+  "workspaces": [
+    "app"
+  ],
+  "scripts": {
+    "dev": "npm --prefix app run dev",
+    "build": "npm --prefix app run build",
+    "preview": "npm --prefix app run preview",
+    "validate-seed": "npm --prefix app run validate-seed"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.475.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11"
+  }
+}

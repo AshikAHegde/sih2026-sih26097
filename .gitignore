@@ -1,3 +1,22 @@
-# Ignore Markdown and Word document files
-*.md
-*.docx
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Production build outputs
+dist/
+**/dist/
+*.tsbuildinfo
+**/*.tsbuildinfo
+
+# Environment and local configs
+.env
+.env.local
+*.zip
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Documentation source directory per repository configuration
+docs/
