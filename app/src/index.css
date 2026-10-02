@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F5F7FA;
+    color: #1A2233;
+    font-family: 'Anek Latin', 'Noto Sans', system-ui, sans-serif;
+  }
+
+  /* Strict typography constraint: Tabular figures for numbers in tables & charts */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum";
+  }
+}
+
+/* Provenance and Simulated Honesty Hatch patterns */
+.hatch-uncertain {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(107, 115, 133, 0.12),
+    rgba(107, 115, 133, 0.12) 4px,
+    transparent 4px,
+    transparent 8px
+  );
+}
+
+.pattern-crowded {
+  background-image: radial-gradient(rgba(181, 71, 27, 0.25) 1px, transparent 0);
+  background-size: 6px 6px;
+}
+
+.simulated-watermark {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(107, 115, 133, 0.04),
+    rgba(107, 115, 133, 0.04) 10px,
+    transparent 10px,
+    transparent 20px
+  );
+}
+
+/* Accessibility: Reduced motion fallback */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .focus-ring-reduced {
+    outline: 2px solid #2F3E9E !important;
+  }
+}
